@@ -11,3 +11,6 @@ https://www.openssh.com/releasenotes.html
 PostgreSQL
 Licencia Postgresql (permisiva de tipo open source)
 https:www.postgresql.org/about/license/
+
+Docker
+Licencia Apache License 2.0
