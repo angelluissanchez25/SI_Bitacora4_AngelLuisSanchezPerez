@@ -7,3 +7,7 @@ https://guacamole.apache.org/
 OpenSSH
 Licencia del tipo BSD(permisiva)
 https://www.openssh.com/releasenotes.html
+
+PostgreSQL
+Licencia Postgresql (permisiva de tipo open source)
+https:www.postgresql.org/about/license/
