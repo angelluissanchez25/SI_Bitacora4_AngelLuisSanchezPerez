@@ -45,4 +45,4 @@ Además, se observa una mejora en la eficiencia de los recursos de hardware, ya 
 
 # 2. Estimación de Costes de Infraestructura
 
-<img src="img/Captura de pantalla 2026-05-22 090013.png" alt="captura">
+<img src="docs/img/Captura de pantalla 2026-05-22 090013.png" alt="captura">
