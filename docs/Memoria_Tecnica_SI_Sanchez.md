@@ -46,3 +46,20 @@ Además, se observa una mejora en la eficiencia de los recursos de hardware, ya 
 # 2. Estimación de Costes de Infraestructura
 
 <img src="Captura de pantalla 2026-05-22 090013.png" alt="captura">
+
+# 3. Estrategia de Despliegue y Comunicación
+
+## 3.1. Sistema de Transferencia de Ficheros Seguro
+
+Para el despliegue de nuestra aplicación desde el entorno de desarrollo local hacia la infraestructura de producción, utilizaremos el protocolo SFTP (SSH File Transfer Protocol), integrado con flujos de despliegue continuo (CI/CD) mediante GitHub Actions.
+
+Descartamos por completo el uso de FTP tradicional, ya que transmite las credenciales y los datos en texto plano, exponiendo el proyecto a ataques de interceptación. A diferencia de FTPS, SFTP opera de forma nativa sobre el protocolo SSH. Esto nos garantiza que todo el tráfico de datos, comandos y autenticaciones viaje cifrado mediante algoritmos de alta seguridad como AES-256.
+
+La autenticación no se realizará mediante contraseñas vulnerables, sino utilizando un par de claves criptográficas SSH. La clave pública se alojará de forma segura en nuestro servidor VPS y la clave privada se gestionará de manera hermética. Así garantizamos una transferencia de ficheros automatizada, íntegra y completamente blindada.
+
+## 3.2. Canales de Mensajería e Integración de Alertas
+
+Para la gestión del proyecto y el soporte operativo, nuestro equipo utilizará Discord como centro de operaciones y mensajería electrónica. No se limitará a la comunicación presencial entre las parejas del proyecto.
+
+En caso de que ocurra una incidencia técnica, herramientas de monitorización como Uptime Kuma o AWS CloudWatch enviarán un ping automático inmediato a Discord. Esto nos permitirá reaccionar en tiempo real, centralizar los logs del sistema y garantizar la alta disponibilidad de la aplicación sin depender de revisiones manuales.
+
