@@ -43,3 +43,6 @@ En conclusión, la solución no solo resuelve el problema de seguridad mediante 
 La implementación de esta infraestructura bajo el paradigma de software libre permite una reducción significativa del Coste Total de Propiedad (TCO). Al utilizar licencias permisivas como la Apache License 2.0 y la PostgreSQL License, la organización queda exenta de costes de licenciamiento recurrentes y de la dependencia de proveedores específicos (vendor lock-in). Esto permite reinvertir el capital en la mejora de la seguridad física y lógica de los sistemas.  
 Además, se observa una mejora en la eficiencia de los recursos de hardware, ya que la sobrecarga (overhead) de los contenedores Docker es mínima en comparación con la virtualización tradicional, permitiendo una mayor densidad de servicios por servidor físico.
 
+# 2. Estimación de Costes de Infraestructura
+
+<img src="img/Captura de pantalla 2026-05-22 090013.png" alt="captura"
