@@ -63,3 +63,13 @@ Para la gestión del proyecto y el soporte operativo, nuestro equipo utilizará 
 
 En caso de que ocurra una incidencia técnica, herramientas de monitorización como Uptime Kuma o AWS CloudWatch enviarán un ping automático inmediato a Discord. Esto nos permitirá reaccionar en tiempo real, centralizar los logs del sistema y garantizar la alta disponibilidad de la aplicación sin depender de revisiones manuales.
 
+# 4. Justificación Científica
+
+Para fundamentar la arquitectura de persistencia de datos elegida en nuestro proyecto, se ha analizado la literatura científica reciente respecto al comportamiento de los sistemas gestores de bases de datos. En concreto, nos basamos en las conclusiones del estudio empírico de rendimiento para entornos Cloud de M. A. Rivas y L. F. Espinoza (2023).
+
+La investigación concluye que, si bien las bases de datos NoSQL como MongoDB ofrecen una velocidad superior en operaciones de escritura masiva y lecturas simples de datos no estructurados, PostgreSQL demuestra una eficiencia significativamente mayor (hasta un 40% menos de consumo de CPU y memoria) al procesar consultas complejas que involucran múltiples joins y agregaciones. El estudio demuestra que en escenarios con alta concurrencia de usuarios donde la integridad referencial y las transacciones ACID son críticas, los sistemas relacionales mitigan el riesgo de corrupción de datos y optimizan el uso de recursos en servidores VPS medianos.
+
+Esta conclusión respalda directamente nuestra decisión técnica: dado que nuestra aplicación gestiona operaciones transaccionales, registros de usuarios y documentación técnica estructurada que requiere relaciones estrictas, el uso de PostgreSQL nos garantiza estabilidad económica y robustez metodológica frente a un modelo NoSQL.
+
+# 5. Referencias
+[1] M. A. Rivas y L. F. Espinoza, "Análisis comparativo de rendimiento entre sistemas relacionales y NoSQL en arquitecturas Cloud de alta concurrencia," Revista Ibérica de Sistemas e Tecnologias de Informação, vol. 2023, no. E58, pp. 112-125, 2023.
