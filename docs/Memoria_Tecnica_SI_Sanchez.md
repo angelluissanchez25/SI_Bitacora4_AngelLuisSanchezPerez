@@ -44,3 +44,5 @@ La implementación de esta infraestructura bajo el paradigma de software libre p
 Además, se observa una mejora en la eficiencia de los recursos de hardware, ya que la sobrecarga (overhead) de los contenedores Docker es mínima en comparación con la virtualización tradicional, permitiendo una mayor densidad de servicios por servidor físico.
 
 # 2. Estimación de Costes de Infraestructura
+
+<img src="Captura de pantalla 2026-05-22 090013.png" alt="captura">
